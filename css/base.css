@@ -104,7 +104,7 @@ h5 {
 /* TYPOGRAPHY — Eyebrow / Label    */
 /* ─────────────────────────────── */
 .eyebrow {
-  font-family: var(--font-label);
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: var(--text-eyebrow);
   line-height: var(--leading-eyebrow);
@@ -142,9 +142,6 @@ h5 {
 /* ─────────────────────────────── */
 /* TYPOGRAPHY — Utility            */
 /* ─────────────────────────────── */
-.font-mono {
-  font-family: var(--font-mono);
-}
 .font-medium {
   font-weight: 500;
 }
