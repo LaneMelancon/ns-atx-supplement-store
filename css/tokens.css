@@ -7,11 +7,6 @@
 /* ─────────────────────────────── */
 /* FONTS                           */
 /* ─────────────────────────────── */
-@font-face { font-family: 'Objective'; font-weight: 400; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/objective/objective-400.woff2') format('woff2'); font-display: swap; }
-@font-face { font-family: 'Objective'; font-weight: 500; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/objective/objective-500.woff2') format('woff2'); font-display: swap; }
-@font-face { font-family: 'Objective'; font-weight: 700; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/objective/objective-700.woff2') format('woff2'); font-display: swap; }
-@font-face { font-family: 'Trade Gothic LT'; font-weight: 700; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/trade-gothic-lt/trade-gothic-lt-700.woff2') format('woff2'); font-display: swap; }
-@font-face { font-family: 'Trade Gothic LT'; font-weight: 400; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/trade-gothic-lt/trade-gothic-lt-400.woff2') format('woff2'); font-display: swap; }
 
 :root {
   /* ─────────────────────────────── */
