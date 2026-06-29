@@ -1,0 +1,265 @@
+/* ══════════════════════════════════════════════════════════════ */
+/* DESIGN TOKENS — NeuroSolution Supplement Store                */
+/* Source of truth for all color, typography, spacing, and       */
+/* elevation values. Import this file first in every HTML page.  */
+/* ══════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────── */
+/* FONTS                           */
+/* ─────────────────────────────── */
+@font-face { font-family: 'Objective'; font-weight: 400; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/objective/objective-400.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Objective'; font-weight: 500; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/objective/objective-500.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Objective'; font-weight: 700; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/objective/objective-700.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Trade Gothic LT'; font-weight: 700; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/trade-gothic-lt/trade-gothic-lt-700.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Trade Gothic LT'; font-weight: 400; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/LaneMelancon/ns-atx-font-files@main/trade-gothic-lt/trade-gothic-lt-400.woff2') format('woff2'); font-display: swap; }
+
+:root {
+  /* ─────────────────────────────── */
+  /* FONT STACKS                     */
+  /* ─────────────────────────────── */
+  --font-primary: 'Objective', 'Gill Sans', Arial, sans-serif;
+  --font-label: 'Trade Gothic LT', 'Gill Sans', 'Trebuchet MS', Arial, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* ─────────────────────────────── */
+  /* BRAND COLORS — Green Scale      */
+  /* ─────────────────────────────── */
+  --color-green-900: #101913;
+  --color-green-800: #0D4A21;
+  --color-green-700: #0C8234;
+  --color-green-600: #0CB144;
+  --color-green-500: #0BDA51;
+  --color-green-400: #3CE174;
+  --color-green-300: #6DE997;
+  --color-green-200: #9DF0B9;
+  --color-green-100: #CEF8DC;
+  --color-green-50:  #E7FBEE;
+
+  /* ─────────────────────────────── */
+  /* BRAND COLORS — Gray Scale       */
+  /* ─────────────────────────────── */
+  --color-gray-900: #131313;
+  --color-gray-800: #191919;
+  --color-gray-700: #303030;
+  --color-gray-600: #525252;
+  --color-gray-500: #747373;
+  --color-gray-400: #969595;
+  --color-gray-300: #B8B7B7;
+  --color-gray-200: #D9D8D8;
+  --color-gray-100: #F0EFEF;
+  --color-gray-50:  #F9F9F9;
+
+  /* ─────────────────────────────── */
+  /* BRAND COLORS — Named            */
+  /* ─────────────────────────────── */
+  --color-white:    #FFFFFF;
+  --color-black:    #131313;
+  --color-malachite:#0BDA51;
+  --color-platinum: #F0EFEF;
+
+  /* ─────────────────────────────── */
+  /* BRAND SEMANTIC ALIASES          */
+  /* ─────────────────────────────── */
+  --color-primary:           var(--color-green-700);
+  --color-primary-container: var(--color-green-500);
+  --color-on-primary:        var(--color-white);
+  --color-on-primary-container: var(--color-green-900);
+
+  /* ─────────────────────────────── */
+  /* SYSTEM COLORS — Success         */
+  /* References brand green scale    */
+  /* ─────────────────────────────── */
+  --sys-success-50:  var(--color-green-50);
+  --sys-success-100: var(--color-green-100);
+  --sys-success-200: var(--color-green-200);
+  --sys-success-400: var(--color-green-400);
+  --sys-success-500: var(--color-green-500);
+  --sys-success-700: var(--color-green-700);
+  --sys-success-800: var(--color-green-800);
+  --sys-success-900: var(--color-green-900);
+  --sys-success-bg:        var(--color-green-50);
+  --sys-success-border:    var(--color-green-100);
+  --sys-success-text:      var(--color-green-900);
+  --sys-success-icon:      var(--color-green-700);
+  --sys-success-bg-dark:   rgba(11, 218, 81, 0.08);
+  --sys-success-border-dark: rgba(11, 218, 81, 0.15);
+  --sys-success-text-dark: var(--color-green-200);
+  --sys-success-icon-dark: var(--color-green-400);
+
+  /* ─────────────────────────────── */
+  /* SYSTEM COLORS — Info (Blue)     */
+  /* ─────────────────────────────── */
+  --sys-info-50:  #EFF6FF;
+  --sys-info-100: #DBEAFE;
+  --sys-info-200: #BFDBFE;
+  --sys-info-300: #93C5FD;
+  --sys-info-400: #60A5FA;
+  --sys-info-500: #3B82F6;
+  --sys-info-600: #2563EB;
+  --sys-info-700: #1D4ED8;
+  --sys-info-800: #1E3A5F;
+  --sys-info-900: #1E3A8A;
+  --sys-info-bg:        #EFF6FF;
+  --sys-info-border:    #BFDBFE;
+  --sys-info-text:      #1E3A5F;
+  --sys-info-icon:      #2563EB;
+  --sys-info-bg-dark:   rgba(37, 99, 235, 0.08);
+  --sys-info-border-dark: rgba(37, 99, 235, 0.15);
+  --sys-info-text-dark: #93C5FD;
+  --sys-info-icon-dark: #60A5FA;
+
+  /* ─────────────────────────────── */
+  /* SYSTEM COLORS — Warning (Amber) */
+  /* ─────────────────────────────── */
+  --sys-warning-50:  #FFFBEB;
+  --sys-warning-100: #FEF3C7;
+  --sys-warning-200: #FDE68A;
+  --sys-warning-300: #FCD34D;
+  --sys-warning-400: #FBBF24;
+  --sys-warning-500: #F59E0B;
+  --sys-warning-600: #D97706;
+  --sys-warning-700: #B45309;
+  --sys-warning-800: #92400E;
+  --sys-warning-900: #78350F;
+  --sys-warning-bg:        #FFFBEB;
+  --sys-warning-border:    #FDE68A;
+  --sys-warning-text:      #78350F;
+  --sys-warning-icon:      #D97706;
+  --sys-warning-bg-dark:   rgba(217, 119, 6, 0.08);
+  --sys-warning-border-dark: rgba(217, 119, 6, 0.15);
+  --sys-warning-text-dark: #FDE68A;
+  --sys-warning-icon-dark: #FBBF24;
+
+  /* ─────────────────────────────── */
+  /* SYSTEM COLORS — Error (Red)     */
+  /* ─────────────────────────────── */
+  --sys-error-50:  #FEF2F2;
+  --sys-error-100: #FEE2E2;
+  --sys-error-200: #FECACA;
+  --sys-error-300: #FCA5A5;
+  --sys-error-400: #F87171;
+  --sys-error-500: #EF4444;
+  --sys-error-600: #DC2626;
+  --sys-error-700: #B91C1C;
+  --sys-error-800: #991B1B;
+  --sys-error-900: #7F1D1D;
+  --sys-error-bg:        #FFDAD6;
+  --sys-error-border:    #FCA5A5;
+  --sys-error-text:      #7F1D1D;
+  --sys-error-icon:      #BA1A1A;
+  --sys-error-bg-dark:   rgba(186, 26, 26, 0.12);
+  --sys-error-border-dark: rgba(248, 113, 113, 0.2);
+  --sys-error-text-dark: #FCA5A5;
+  --sys-error-icon-dark: #F87171;
+
+  /* Legacy alias */
+  --color-error:           #BA1A1A;
+  --color-error-container: #FFDAD6;
+  --color-on-error-container: #93000A;
+
+  /* ─────────────────────────────── */
+  /* SURFACE COLORS                  */
+  /* ─────────────────────────────── */
+  --surface-bg:               #FCF9F8;
+  --surface-lowest:           #FFFFFF;
+  --surface-low:              #F6F3F2;
+  --surface-container:        #F0EDEC;
+  --surface-high:             #EBE7E7;
+  --surface-highest:          #E5E2E1;
+  --surface-inverse:          #313030;
+  --surface-on:               var(--color-gray-900);
+  --surface-on-variant:       var(--color-gray-600);
+  --surface-outline:          var(--color-gray-300);
+  --surface-outline-variant:  var(--color-gray-200);
+
+  /* ─────────────────────────────── */
+  /* TYPOGRAPHY SCALE                */
+  /* ─────────────────────────────── */
+  --text-h1:       60px;
+  --text-h1-mob:   40px;
+  --text-h2:       44px;
+  --text-h2-mob:   32px;
+  --text-h3:       24px;
+  --text-h4:       18px;
+  --text-h5:       16px;
+  --text-eyebrow:  14px;
+  --text-body-lg:  18px;
+  --text-body-reg: 16px;
+  --text-body-sm:  14px;
+  --text-body-tiny:12px;
+
+  --leading-h1:       68px;
+  --leading-h1-mob:   48px;
+  --leading-h2:       54px;
+  --leading-h2-mob:   40px;
+  --leading-h3:       32px;
+  --leading-h4:       24px;
+  --leading-h5:       24px;
+  --leading-eyebrow:  14px;
+  --leading-body-lg:  28px;
+  --leading-body-reg: 24px;
+  --leading-body-sm:  21px;
+  --leading-body-tiny:18px;
+
+  --tracking-h1:      -1px;
+  --tracking-h2:      -1px;
+  --tracking-h2-mob:  -0.5px;
+  --tracking-eyebrow: 1px;
+
+  /* ─────────────────────────────── */
+  /* BORDER RADIUS                   */
+  /* ─────────────────────────────── */
+  --rounded-sm:   4px;
+  --rounded:      8px;
+  --rounded-md:   12px;
+  --rounded-lg:   16px;
+  --rounded-xl:   24px;
+  --rounded-full: 9999px;
+
+  /* ─────────────────────────────── */
+  /* SPACING SCALE                   */
+  /* ─────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ─────────────────────────────── */
+  /* ELEVATION / SHADOWS             */
+  /* ─────────────────────────────── */
+  --shadow-xs:  0 1px 2px rgba(0,0,0,0.04);
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:  0 4px 6px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg:  0 10px 15px rgba(0,0,0,0.06), 0 4px 6px rgba(0,0,0,0.04);
+  --shadow-xl:  0 20px 25px rgba(0,0,0,0.08), 0 8px 10px rgba(0,0,0,0.04);
+  --shadow-toast: 0 4px 16px rgba(0,0,0,0.14);
+
+  /* ─────────────────────────────── */
+  /* TRANSITIONS                     */
+  /* ─────────────────────────────── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+
+  /* ─────────────────────────────── */
+  /* Z-INDEX SCALE                   */
+  /* ─────────────────────────────── */
+  --z-base:     0;
+  --z-dropdown: 10;
+  --z-sticky:   20;
+  --z-fixed:    30;
+  --z-overlay:  40;
+  --z-modal:    50;
+  --z-toast:    60;
+  --z-tooltip:  70;
+}
